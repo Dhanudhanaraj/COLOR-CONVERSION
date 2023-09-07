@@ -49,9 +49,9 @@ import cv2
 houseHSVImage = cv2.imread('dip1.jpeg')
 cv2.imshow('Original HSV Image',houseHSVImage)
 RGBImage = cv2.cvtColor(houseHSVImage,cv2.COLOR_HSV2RGB)
-cv2.imshow('BGR2HSV',RGBImage)
+cv2.imshow('HSV2RGB',RGBImage)
 BGRImage=cv2.cvtColor(houseHSVImage,cv2.COLOR_HSV2BGR)
-cv2.imshow('RGB2HSV',BGRImage)
+cv2.imshow('HSV2BGR',BGRImage)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 
@@ -60,11 +60,11 @@ cv2.destroyAllWindows()
 ```
 import cv2
 houseImage = cv2.imread('dip1.jpeg')
-cv2.imshow('Original HSV Image',houseImage)
+cv2.imshow('Original Image',houseImage)
 YCrCb_image = cv2.cvtColor(houseImage, cv2.COLOR_RGB2YCrCb)
-cv2.imshow('BGR2HSV',YCrCb_image)
+cv2.imshow('RGB2YCrCb',YCrCb_image)
 YCrCb_image1 = cv2.cvtColor(houseImage, cv2.COLOR_BGR2YCrCb)
-cv2.imshow('RGB2HSV',YCrCb_image1)
+cv2.imshow('BGR2YCrCb',YCrCb_image1)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 
@@ -80,7 +80,7 @@ cv2.imshow('B-Channel',blue)
 cv2.imshow('G-Channel',green)
 cv2.imshow('R-Channel',red)
 mergeBgr = cv2.merge((blue,green,red))
-cv2.imshow('Merged BGR image',mergeBgr)
+cv2.imshow('Merged image',mergeBgr)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 
@@ -121,35 +121,42 @@ cv2.destroyAllWindow
 
 ### ii) HSV to RGB and BGR
 
-![Screenshot from 2023-08-18 14-16-50](https://github.com/Dhanudhanaraj/COLOR-CONVERSION/assets/119218812/bb9057f3-8562-40ad-8fb3-41ad51c0dd02)
+![Screenshot from 2023-09-07 23-20-32](https://github.com/Dhanudhanaraj/COLOR-CONVERSION/assets/119218812/41a4b32c-1d89-46d1-b26d-5a7219035008)
 
-![Screenshot from 2023-08-18 14-17-02](https://github.com/Dhanudhanaraj/COLOR-CONVERSION/assets/119218812/be4840d3-b199-4905-93fd-b678d28fa6c7)
+![Screenshot from 2023-09-07 23-20-41](https://github.com/Dhanudhanaraj/COLOR-CONVERSION/assets/119218812/153e1909-4ac7-4da1-b806-551eae7c3f77)
 
-![Screenshot from 2023-08-18 14-17-13](https://github.com/Dhanudhanaraj/COLOR-CONVERSION/assets/119218812/f1844ef3-ffd7-4028-b228-b1a6f4ef7107)
+![Screenshot from 2023-09-07 23-20-49](https://github.com/Dhanudhanaraj/COLOR-CONVERSION/assets/119218812/8de9bf5a-b04b-43f6-9ceb-b0de04ef2a57)
 
-![Screenshot from 2023-08-18 14-17-54](https://github.com/Dhanudhanaraj/COLOR-CONVERSION/assets/119218812/67275b8d-ecc0-45a4-a18c-0972d1f5dbf3)
+![Screenshot from 2023-09-07 23-21-11](https://github.com/Dhanudhanaraj/COLOR-CONVERSION/assets/119218812/30d10eab-8e47-47dc-b619-64b17cc8c0d3)
 
 ### iii) RGB and BGR to YCrCb
 
-![Screenshot from 2023-08-18 14-22-09](https://github.com/Dhanudhanaraj/COLOR-CONVERSION/assets/119218812/6a6799a9-670a-4928-b55c-1cda9e3ffb95)
+![Screenshot from 2023-09-07 23-23-23](https://github.com/Dhanudhanaraj/COLOR-CONVERSION/assets/119218812/d6e968c9-72a3-4826-878d-cfd2548c186e)
 
-![Screenshot from 2023-08-18 14-22-23](https://github.com/Dhanudhanaraj/COLOR-CONVERSION/assets/119218812/a334914d-a4d8-4efe-849c-50ef680904c9)
+![Screenshot from 2023-09-07 23-23-32](https://github.com/Dhanudhanaraj/COLOR-CONVERSION/assets/119218812/c4246a88-e598-4b91-bf60-dff632246681)
 
-![Screenshot from 2023-08-18 14-22-37](https://github.com/Dhanudhanaraj/COLOR-CONVERSION/assets/119218812/1ad94016-815e-4bcd-93be-deb857fcdaf5)
+![Screenshot from 2023-09-07 23-23-40](https://github.com/Dhanudhanaraj/COLOR-CONVERSION/assets/119218812/d1bd3a6f-dc3b-4e61-843b-bdbf016d728d)
 
-![Screenshot from 2023-08-18 14-22-59](https://github.com/Dhanudhanaraj/COLOR-CONVERSION/assets/119218812/e0ed4a45-b53b-4cd5-b196-8adf77b6414c)
+
+![Screenshot from 2023-09-07 23-23-55](https://github.com/Dhanudhanaraj/COLOR-CONVERSION/assets/119218812/e3f76683-080c-43fe-9eef-40fd2cd8d02c)
+
+![Screenshot from 2023-09-07 23-24-10](https://github.com/Dhanudhanaraj/COLOR-CONVERSION/assets/119218812/a521e68d-2548-49ed-b937-3adc4f1c659a)
+
 
 ### iv) Split and merge RGB Image
 
-![Screenshot from 2023-08-18 14-27-04](https://github.com/Dhanudhanaraj/COLOR-CONVERSION/assets/119218812/e81eabb7-e94c-4215-9aaa-bf18e6a5b9ba)
+![Screenshot from 2023-09-07 23-27-30](https://github.com/Dhanudhanaraj/COLOR-CONVERSION/assets/119218812/701947e7-05c8-469e-b2d1-2c72e1396355)
 
-![Screenshot from 2023-08-18 14-27-15](https://github.com/Dhanudhanaraj/COLOR-CONVERSION/assets/119218812/91d449ed-b6a5-468a-964b-0d5e1d293244)
+![Screenshot from 2023-09-07 23-27-41](https://github.com/Dhanudhanaraj/COLOR-CONVERSION/assets/119218812/b26d17d3-1fa3-4c3c-b5e0-f199ef9ac6ff)
 
-![Screenshot from 2023-08-18 14-27-26](https://github.com/Dhanudhanaraj/COLOR-CONVERSION/assets/119218812/fd1fe62d-4333-411a-8483-bbb833b84974)
+![Screenshot from 2023-09-07 23-27-52](https://github.com/Dhanudhanaraj/COLOR-CONVERSION/assets/119218812/b7204559-bdba-427b-a621-c6e7aa28f325)
 
-![Screenshot from 2023-08-18 14-27-39](https://github.com/Dhanudhanaraj/COLOR-CONVERSION/assets/119218812/2e566a81-d10f-4cd9-bbae-52053c853bfc)
 
-![Screenshot from 2023-08-18 14-27-57](https://github.com/Dhanudhanaraj/COLOR-CONVERSION/assets/119218812/fd9cc3fe-9e11-4440-bd03-25592697f9bf)
+![Screenshot from 2023-09-07 23-28-04](https://github.com/Dhanudhanaraj/COLOR-CONVERSION/assets/119218812/1db32480-9386-4cb1-96a4-f583a8317ee8)
+
+![Screenshot from 2023-09-07 23-28-14](https://github.com/Dhanudhanaraj/COLOR-CONVERSION/assets/119218812/bf54e850-a0d0-46ba-addd-eb2096e3455a)
+
+
 
 ### v) Split and merge HSV Image
 
